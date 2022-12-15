@@ -11,6 +11,9 @@ module.exports = {
       xl: '1440px',
     },
     extend: {
+      fontFamily: {
+        rubik: ['Dancing Script', 'cursive'],
+      },
       colors: {
         gold: '#FACF0F',
         softBlack: '#0C0C0C',
