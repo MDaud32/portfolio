@@ -1,13 +1,13 @@
 import React from 'react';
-import SocialMedia from '../components/SocialMedia';
+import SocialMedia from './SocialMedia';
 import { CgMailForward } from 'react-icons/cg';
-import Background from '../components/Background';
+import Background from './Background';
 
 const HomePage = () => {
   return (
-    <div className="relative">
-      <Background />
-      <div className="absolute z-10 md:mt-12 flex flex-row py-40">
+    <div className="">
+      {/* <Background /> */}
+      <div className=" flex flex-row py-40">
         <div className="">
           <SocialMedia />
         </div>
@@ -24,7 +24,7 @@ const HomePage = () => {
             Websites and Web Applications that leads to the success of the
             overall product.
           </p>
-          <button className="group bg-gold btn text-2xl text-softBlack h over:text-black font-semibold">
+          <button className="group bg-gold btn text-2xl text-softBlack h over:text-black font-semibold rounded-full">
             Projects
             <span className="bg-white group-hover:bg-softBlack">
               <CgMailForward className="text-black group-hover:text-white absolute text-center mx-auto text-5xl" />

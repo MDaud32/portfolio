@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Nav from '../components/Nav';
-import HomePage from './HomePage';
+import About from '../components/About';
+import HomePage from '../components/HomePage';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Nav />
       <HomePage />
+      <About />
     </div>
   );
 }

@@ -12,11 +12,11 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        rubik: ['Dancing Script', 'cursive'],
+        rubik: ['PT Serif', 'serif'],
       },
       colors: {
         gold: '#FACF0F',
-        softBlack: '#0C0C0C',
+        softBlack: '#303031',
       },
     },
   },
