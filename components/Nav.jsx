@@ -33,7 +33,7 @@ const Nav = () => {
           className={`md:flex md:items-center items-end text- md:pb-0 pb-12 absolute md:static md:z-auto text-white md:bg-transparent bg-gold hover:text-gold z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in font-rubik ${
             open ? 'top-0 ' : 'top-[-490px]'
           }`}>
-          <Image src={logo} alt="" className="text-gold w-28 md:hidden" />
+          <Image src={logo}  alt="" className="text-gold w-28 md:hidden" />
           {Links.map((link) => (
             <li
               key={link.name}
