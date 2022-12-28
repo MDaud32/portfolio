@@ -1,7 +1,7 @@
-import React from 'react';
-import SocialMedia from './SocialMedia';
-import { CgMailForward } from 'react-icons/cg';
-import Background from './Background';
+import React from "react";
+import SocialMedia from "./SocialMedia";
+import { CgMailForward } from "react-icons/cg";
+import Background from "./Background";
 
 const HomePage = () => {
   return (
@@ -13,7 +13,7 @@ const HomePage = () => {
         </div>
         <div className="contianer md:ml-28 mx-auto md:p-0 p-8 space-y-4">
           <h1 className="text-xl text-gold">Hi, my name is</h1>
-          <h1 className="text-gray-100 text-5xl md:text-[5rem] font-bold">
+          <h1 className="text-gray-100 text-5xl md:text-[5rem] font-bold hover:tracking-widest duration-300">
             Muhammad Daud
           </h1>
           <h1 className="text-gray-300 text-4xl md:text-[4rem] font-bold">
