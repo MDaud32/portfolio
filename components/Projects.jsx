@@ -31,7 +31,7 @@ const Projects = () => {
               needs of their clients and help businesses succeed online.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button>Detail</Button>
+              <Button>Case Study</Button>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Projects = () => {
               where they are located on the board.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button>Detail</Button>
+              <Button>Case Study</Button>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Projects = () => {
               the creator&apos;s skills, experience, and background.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button>Detail</Button>
+              <Button>Case Study</Button>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ const Projects = () => {
               mix them, as well as tips for hosting a cocktail party or event.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button>Detail</Button>
+              <Button>Case Study</Button>
             </div>
           </div>
         </div>
