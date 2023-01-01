@@ -1,26 +1,35 @@
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 import React, { useState } from "react";
 // import Button from './Button';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import mainLogo from "../public/images/mainlogo.png";
 import logo from "../public/images/logo.png";
+import { Link } from "react-scroll/modules";
 
 const Nav = () => {
   let Links = [
-    { title: "01.", name: "About", link: "/#about" },
-    { title: "02.", name: "Experience", link: "/#experience" },
-    { title: "03.", name: "Work", link: "/#work" },
-    { title: "04.", name: "Contact", link: "/#contact" },
+    { title: "01.", name: "About", link: "about" },
+    { title: "02.", name: "Experience", link: "experience" },
+    { title: "03.", name: "Work", link: "work" },
+    { title: "04.", name: "Contact", link: "contact" },
   ];
   let [open, setOpen] = useState(false);
   return (
     <div className="z-20 shadow-md w-full fixed top-0 left-0 md:bg-gray-700 md:bg-opacity-40">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         <div className="font-bold text-2xl cursor-pointer flex items-center text-gold">
-          <Link href="/">
-            <Image src={mainLogo} alt="" className="text-gold w-16" />
-          </Link>
+          <button>
+            <Link
+              activeClass="active"
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}>
+              <Image src={mainLogo} alt="" className="text-gold w-16" />
+            </Link>
+          </button>
         </div>
 
         <div
@@ -42,11 +51,18 @@ const Nav = () => {
                 <div className="text-sm text-softBlack md:text-gold group-hover:border-gray-400">
                   {link.title}
                 </div>
-                <Link
-                  href={link.link}
-                  className="md:text-white text-black font-bold hover:text-gray-700 md:hover:text-gold duration-500">
-                  {link.name}
-                </Link>
+                <button>
+                  <Link
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={300}
+                    to={link.link}
+                    className="md:text-white text-black font-bold hover:text-gray-700 md:hover:text-gold duration-500">
+                    {link.name}
+                  </Link>
+                </button>
               </div>
             </li>
           ))}

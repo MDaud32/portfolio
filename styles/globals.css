@@ -2,8 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 .btn {

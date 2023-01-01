@@ -5,7 +5,7 @@ import Background from "./Background";
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div className="" id="/">
       {/* <Background /> */}
       <div className=" flex flex-row py-40">
         <div className="">
