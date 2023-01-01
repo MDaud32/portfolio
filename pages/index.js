@@ -4,6 +4,7 @@ import Nav from "../components/Nav";
 import About from "../components/About";
 import HomePage from "../components/HomePage";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <HomePage />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }

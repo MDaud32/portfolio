@@ -64,7 +64,7 @@ const Projects = () => {
               showcases the work and achievements of an individual or
               organization. It typically includes a selection of projects,
               accomplishments, and creative works, along with information about
-              the creator&apos;s skills, experience, and background.
+              the creator&apos;s skills, experience, and ba ckground.
             </p>
             <div className="flex justify-center md:justify-start">
               <Button>Case Study</Button>

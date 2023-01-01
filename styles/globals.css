@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,7 +39,7 @@ html {
   left: calc(100% - 55px);
 }
 .btn:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 80px;
   height: 100px;
