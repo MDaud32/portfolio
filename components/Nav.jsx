@@ -8,13 +8,13 @@ import logo from "../public/images/logo.png";
 import { Link } from "react-scroll/modules";
 
 const Nav = () => {
+  let [open, setOpen] = useState(false);
   let Links = [
     { title: "01.", name: "About", link: "about" },
     { title: "02.", name: "Experience", link: "experience" },
     { title: "03.", name: "Work", link: "work" },
     { title: "04.", name: "Contact", link: "contact" },
   ];
-  let [open, setOpen] = useState(false);
   return (
     <div className="z-20 shadow-md w-full fixed top-0 left-0 md:bg-gray-700 md:bg-opacity-40">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
@@ -27,22 +27,30 @@ const Nav = () => {
               smooth={true}
               offset={50}
               duration={500}>
-              <Image src={mainLogo} alt="" className="text-gold w-16" />
+              <Image
+                src={mainLogo}
+                alt="logo image"
+                className="text-gold w-16 z-0"
+              />
             </Link>
           </button>
         </div>
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden  text-white">
+          className="text-3xl absolute z-20 right-8 top-6 cursor-pointer md:hidden  text-white">
           <button>{open ? <AiOutlineClose /> : <AiOutlineMenu />}</button>
         </div>
 
         <ul
-          className={`md:flex md:items-center items-end text- md:pb-0 pb-12 absolute md:static md:z-auto text-white md:bg-transparent bg-gold hover:text-gold z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in font-rubik ${
-            open ? "top-0 " : "top-[-490px]"
+          className={`md:flex md:items-center items-end text- md:pb-0 pb-12 absolute md:static md:z-auto text-white md:bg-transparent bg-gold hover:text-gold z-10 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in font-rubik ${
+            open ? "top-0" : "top-[-490px]"
           }`}>
-          <Image src={logo} alt="" className="text-gold w-28 md:hidden" />
+          <Image
+            src={logo}
+            alt="logo img"
+            className="text-gold w-28 md:hidden"
+          />
           {Links.map((link) => (
             <li
               key={link.name}
@@ -59,6 +67,7 @@ const Nav = () => {
                     offset={-50}
                     duration={300}
                     to={link.link}
+                    onClick={() => setOpen(false)}
                     className="md:text-white text-black font-bold hover:text-gray-700 md:hover:text-gold duration-500">
                     {link.name}
                   </Link>

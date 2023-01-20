@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div className="" id="/">
       {/* <Background /> */}
-      <div className=" flex flex-row py-40">
+      <div className=" flex flex-row py-40 ">
         <div className="">
           <SocialMedia />
         </div>
