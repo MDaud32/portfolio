@@ -2,7 +2,7 @@ import React from "react";
 import SocialMedia from "./SocialMedia";
 import { CgMailForward } from "react-icons/cg";
 import Background from "./Background";
-
+``;
 const HomePage = () => {
   return (
     <div className="" id="/">
